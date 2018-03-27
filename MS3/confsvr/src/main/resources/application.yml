@@ -1,0 +1,27 @@
+server:
+  port: 8888
+spring:
+  cloud:
+   config:
+      server:
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/linuxmin/SWE/
+          force-pull: true
+          username: linuxmin
+          password: Lasvegas2010
+
+          ####
+          #Classpath and file-based solution
+          ####
+
+          #server:
+           # port: 8888
+          #spring:
+           #profiles:
+            #active: native
+           #cloud:
+               #config:
+                #server:
+                     #native:
+                       #searchLocations: file:///home/linuxmin/g2018s_dse_0206/MS3/confsvr/src/main/resources/config/searchservice
